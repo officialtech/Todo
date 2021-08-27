@@ -24,7 +24,7 @@ class TodoApiView(View):
     def post(self, request, *args, **kwargs):
         name = self.request.POST['name']
         notes = self.request.POST['notes']
-        gid = self.request.POST['gid']
+        gid = self.request.POST.get('gid')
         print(gid)
         data = {
             "name": name,
@@ -41,9 +41,9 @@ class TodoApiView(View):
         print(put_data)
         return HttpResponseRedirect(reverse('todoAPI'))
 
-# class TodoApiDeleteView(View):
+class TodoApiDeleteView(View):
 
-#     def get(self, request, *args, **kwargs):
-#         gid = kwargs['gid']
-#         delete_data = delete_task(gid)
-#         return HttpResponse(delete_data, content_type='application/json', status=200)
+    def get(self, request, *args, **kwargs):
+        gid = kwargs['gid']
+        delete_data = delete_task(gid)
+        return HttpResponse(delete_data, content_type='application/json', status=200)
