@@ -5,7 +5,7 @@
 ![OfficialTech](https://user-images.githubusercontent.com/46815338/131124790-d7351745-0913-46eb-b5f7-b5fdfe3acec6.png)
 
 
-## For using ASANA API you have to sign in and get
+## For using ASANA API you have to sign in and get all API details
 you can visit here [ASANA](https://app.asana.com)
 ```
 ACCESS_TOKEN
