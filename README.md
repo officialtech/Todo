@@ -5,7 +5,7 @@ This is an ASANA API based Django fully loaded web app, where you can perform CU
 
 
 1. clone repository from here [TODO](https://github.com/officialtech/Todo)
-2. 
+
 
 
 https://user-images.githubusercontent.com/46815338/131211203-4c1cdb4e-0c65-4554-b95e-812654f6c7d8.mp4
